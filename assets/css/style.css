@@ -1,0 +1,86 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-image: url("../images/james-day-5YWf-5hyZcw-unsplash.jpg");
+    object-position: 50px 30px;
+    background-size: inherit;
+    
+    background-position: 0% 60%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.btn {
+    font-size: 1.3rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: .3rem;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: darkorange;
+    box-shadow: 3px 3px grey;
+    transform: translate(-1px, -1px);
+  }
+
+/* CARDS */
+.card {
+    margin: 40px 0 20px 0px;
+    background-color: #ffe5b4;
+    border-radius: .3rem;
+}
+
+.card-header {
+    color: white;
+    background-color: darkorange;
+    padding: 2.5%;
+    border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+    margin: 5px auto;
+    font-size: 25px;
+}
+
+.card-body {
+    padding: 2.5%;
+}
+
+/* FORM */
+
+.form-input,
+.form-textarea {
+    display: block;
+}
+
+.form-input {
+    width: 94%;
+    padding: 2%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: .3rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
