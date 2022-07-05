@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
 body {
     font-family: helvetica, arial, sans-serif;
 }
@@ -24,40 +31,27 @@ header h1 {
 
 }
 
-.btn {
-    font-size: 1.3rem;
-    text-decoration:none;
-    padding: 6px 5px;
-    width: 100%;
-    display: block;
-    margin: 5px 0;
-    border-radius: .3rem;
-    color: white;
-    border: none;
-    outline: none;
-    background-color: darkorange;
-    box-shadow: 3px 3px grey;
-    transform: translate(-1px, -1px);
-  }
-
 /* CARDS */
 .card {
-    margin: 40px 0 20px 0px;
+    /* margin: 40px 0 20px 0px; */
     background-color: #ffe5b4;
     border-radius: .3rem;
+    width: 300px;
+    height: 180px;
+    margin-top: 12px;
+    overflow: hidden;
 }
 
 .card-header {
     color: white;
     background-color: darkorange;
-    padding: 2.5%;
-    border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
-    margin: 5px auto;
+    padding: 8px 15px;
     font-size: 25px;
 }
 
 .card-body {
-    padding: 2.5%;
+    padding: 5px;
+    margin: 10px;
 }
 
 /* FORM */
@@ -68,19 +62,82 @@ header h1 {
 }
 
 .form-input {
-    width: 94%;
-    padding: 2%;
+    width: 270px;
+    padding: 5px 8px;
     margin: 5px 0;
     font-size: 1.2rem;
     border: 1px solid black;
     border-radius: .3rem;
 }
 
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-}
+.btn {
+    font-size: 1.3rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 270px;
+    display: block;
+    margin: 15px 0px 15px 0px;
+    border-radius: .3rem;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: darkorange;
+    box-shadow: 3px 3px grey;
+    /* transform: translate(-1px, -1px); */
+  }
 
 .justify-space-between {
     justify-content: space-between;
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 45px auto;
+}
+
+#results-container {
+    width: 600px;
+}
+
+.data-container {
+    border: 2px solid black;
+    padding: 15px;
+    width: 550px;
+    height: 275px;
+    margin: 10px 0 0 25px;
+    
+  }
+
+  .data-container box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+  }
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.forcast {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.forcast-block {
+    background-color: orange;
+    width: 90px;
+    height: 100px;
+    margin: 11px;
+}
+

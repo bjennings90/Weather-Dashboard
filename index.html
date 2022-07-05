@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Dashboard</title>
 </head>
+
 <body>
     <!-- header title -->
     <header>
@@ -15,15 +17,50 @@
 
     <!-- hero/jumbotron -->
     <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
         <div class="card">
-          <h3 class="card-header text-uppercase">Search for a City:</h3>
-          <form id="search-form" class="card-body">
-            <input name="search" id="search" type="text" autofocus="true" class="form-input" />
-            <button type="submit" class="btn">Search</button>
-          </form>
+            <h3 class="card-header text-uppercase">Search for a City:</h3>
+            <form id="search-form" class="card-body">
+                <input name="search" id="search" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn">Search</button>
+            </form>
         </div>
+        <div id="results-container">
+        <div class="data-container" id="data-container">
+            <box>
+                <span id="main-data">
+                    <p id="currentDay"></p>
+                </span>
+                <span id="main-temp">
+                    <h3>Temp:</h3>
+                </span>
+                <span id="main-wind">Wind:</span>
+                <span id="main-humidity">Humidity:</span>
+                <span id="main-uv">UV Index:</span>
+            </box>
+        </div>
+        <h3 class="forcast">5-Day Forcast</h3>
+        <section class="blocks" id="forcast-blocks">
+            
+        <div class="forcast-block" id="day-1">
+
+        </div>
+        <div class="forcast-block" id="day-2">
+            
+        </div>
+        <div class="forcast-block" id="day-3">
+            
+        </div>
+        <div class="forcast-block" id="day-4">
+            
+        </div>
+        <div class="forcast-block" id="day-5">
+            
+        </div>
+        </section>
+    </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/fetchGet.js"></script>
 </body>
+
 </html>
