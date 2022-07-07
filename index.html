@@ -1,66 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Dashboard</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header title -->
     <header>
-        <h1>Weather Dashboard</h1>
+      <h1>Weather Dashboard</h1>
     </header>
 
     <!-- hero/jumbotron -->
     <main class="flex-row justify-space-between">
-        <div class="card">
-            <h3 class="card-header text-uppercase">Search for a City:</h3>
-            <form id="search-form" class="card-body">
-                <input name="search" id="search" type="text" autofocus="true" class="form-input" />
-                <button type="submit" class="btn">Search</button>
-            </form>
-        </div>
-        <div id="results-container">
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search for a City:</h3>
+        <form id="search-form" class="card-body">
+          <input name="search" id="search" type="text" autofocus="true" class="form-input"/>
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+<!-- current data section -->
+      <div id="results-container">
         <div class="data-container" id="data-container">
-            <box>
-                <span id="main-data">
-                    <p id="currentDay"></p>
-                </span>
-                <span id="main-temp">
-                    <h3>Temp:</h3>
-                </span>
-                <span id="main-wind">Wind:</span>
-                <span id="main-humidity">Humidity:</span>
-                <span id="main-uv">UV Index:</span>
-            </box>
+          <box>
+            <span id="main-data"></span>
+            <span id="main-temp"></span>
+            <span id="main-wind"></span>
+            <span id="main-humidity"></span>
+            <span id="main-uv"></span>
+          </box>
         </div>
-        <h3 class="forcast">5-Day Forcast</h3>
-        <section class="blocks" id="forcast-blocks">
-            
-        <div class="forcast-block" id="day-1">
 
-        </div>
-        <div class="forcast-block" id="day-2">
-            
-        </div>
-        <div class="forcast-block" id="day-3">
-            
-        </div>
-        <div class="forcast-block" id="day-4">
-            
-        </div>
-        <div class="forcast-block" id="day-5">
-            
-        </div>
+<!-- 5 Day Forecast Section -->
+        <h3 class="forecast">5-Day Forecast</h3>
+        <section class="blocks" id="forecast-blocks">
+          <div class="forecast-block" id="day-1">
+            <box>
+                <span id="dayOneDate"></span>
+              <span id="main-temp_1"></span>
+              <span id="main-wind_1"></span>
+              <span id="main-humidity_1"></span>
+            </box>
+          </div>
+
+          <div class="forecast-block" id="day-2">
+            <span id="dayTwoDate"></span>
+            <span id="main-temp_2"></span>
+            <span id="main-wind_2"></span>
+            <span id="main-humidity_2"></span>
+          </div>
+
+          <div class="forecast-block" id="day-3">
+            <box>
+                <span id="dayThreeDate"></span>
+              <span id="main-temp_3"></span>
+              <span id="main-wind_3"></span>
+              <span id="main-humidity_3"></span>
+            </box>
+          </div>
+
+          <div class="forecast-block" id="day-4">
+            <box>
+                <span id="dayFourDate"></span>
+              <span id="main-temp_4"></span>
+              <span id="main-wind_4"></span>
+              <span id="main-humidity_4"></span>
+            </box>
+          </div>
+
+          <div class="forecast-block" id="day-5">
+            <box>
+                <span id="dayFiveDate"></span>
+              <span id="main-temp_5"></span>
+              <span id="main-wind_5"></span>
+              <span id="main-humidity_5"></span>
+            </box>
+          </div>
         </section>
-    </div>
+      </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/fetchGet.js"></script>
-</body>
-
+  </body>
 </html>
